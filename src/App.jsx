@@ -4,11 +4,19 @@ import Student from './Student.jsx'
 
 function App() {
   return(
-      <div className="student">
-        <Card/>
+      <div className="container">
+        <div className="student">
+        <Card username="@haltriescode" status="Sleeping"/>
         <Button/>
         <Student name="Hal" country="Indonesia" isStudent={true}/>
       </div>
+      <div className="student">
+        <Card/>
+        <Button/>
+        <Student/>
+      </div>
+      </div>
+      
       
 );
 }
