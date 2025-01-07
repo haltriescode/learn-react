@@ -1,22 +1,15 @@
-import Card from './Card.jsx'
-import Button from './Button/Button.jsx'
-import Student from './Student.jsx'
+import {HashRouter as Router, Routes, Route} from 'react-router-dom'
+import Home from './Pages/home';
+import Page1 from './Pages/page-1';
 
 function App() {
   return(
-      <div className="container">
-        <div className="student">
-        <Card username="@haltriescode" status="Sleeping"/>
-        <Button/>
-        <Student name="Hal" country="Indonesia" isStudent={true}/>
-      </div>
-      <div className="student">
-        <Card/>
-        <Button/>
-        <Student/>
-      </div>
-      </div>
-      
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/page-1" element={<Page1/>}/>
+      </Routes>
+    </Router>
       
 );
 }
