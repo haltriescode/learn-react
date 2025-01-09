@@ -10,12 +10,15 @@ function Button(){
         cursor: "pointer",
     }
     // Styling using Button.module.css (Button 1) and using inline styling ( Button 2)
+    
+    
     return(
     <>
   
     <button className={styles.button}>Button 1</button>
 
     <button style={style}>Button 2</button>
+
     </>
 )
 }
