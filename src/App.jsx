@@ -6,6 +6,7 @@ import Page3 from './Pages/page-3';
 import Page4 from './Pages/page-4';
 import Page5 from './Pages/page-5';
 import Page6 from './Pages/page-6';
+import Page7 from './Pages/page-7';
 
 function App() {
   return(
@@ -18,6 +19,7 @@ function App() {
         <Route path="/page-4" element={<Page4/>}/>
         <Route path="/page-5" element={<Page5/>}/>
         <Route path="/page-6" element={<Page6/>}/>
+        <Route path="/page-7" element={<Page7/>}/>
       </Routes>
     </Router>
       
