@@ -9,6 +9,7 @@ import Page6 from './Pages/page-6';
 import Page7 from './Pages/page-7';
 import Page8 from './Pages/page-8';
 import Page9 from './Pages/page-9';
+import Page10 from './Pages/page-10';
 
 function App() {
   return(
@@ -24,6 +25,7 @@ function App() {
         <Route path="/page-7" element={<Page7/>}/>
         <Route path="/page-8" element={<Page8/>}/>
         <Route path="/page-9" element={<Page9/>}/>
+        <Route path="/page-10" element={<Page10/>}/>
       </Routes>
     </Router>
       
