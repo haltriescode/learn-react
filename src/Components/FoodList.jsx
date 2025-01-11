@@ -15,7 +15,7 @@ function FoodList(){
         setFoods(foods.filter((_, i) => i !== index )); // i is for index
     }
 
-    return (<div>
+    return (<div class="foodlist">
         <h2>List of food</h2>
         <ul>
             {foods.map((food, index) => <li key={index} onClick={() => handleRemoveFood(index)}>{food}</li>)}
